@@ -14,6 +14,7 @@
     <!-- 추가될 link들 -->
   <th:block th:replace="${links}" />
     <link rel="stylesheet" href="../static/css/example.css" th:href="@{../statcss/example.css}"   />
+      <link rel="stylesheet" href="../static/css/example2.css" th:href="@{../statcss/example2.css}"   />    
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- google charts and chart js -->
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
@@ -37,6 +38,75 @@
     <meta itemprop="name" content="대한민국 1등 천식관리어플 숨케어">
     <meta itemprop="description" content="9월 종합보고서">
     <meta itemprop="image" content="http://soomcare.com//resources/images/common/thumbnail_image.png">
+
+<style>
+    @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+    @media print {
+        div {
+            -webkit-print-color-adjust: exact;
+        }
+    }
+    /* 모바일 수평 스크롤 금지 */
+    
+    body {
+        overflow: hidden;
+        width: 100%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    
+    @page {
+        size: auto;
+        margin: 0;
+        /* this affects the margin in the printer settings */
+    }
+    
+    @media screen and (min-width: 800px) {
+        body {
+            color: #343434;
+            background: #2A3F54;
+            font-family: "Helvetica Neue", Roboto, Arial, "Droid Sans", sans-serif;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 1.471;
+            background-color: #d0d0d0;
+            -webkit-print-color-adjust: exact;
+            overflow: auto;
+        }
+        .background-wrap {
+            background-color: #FFFFFF;
+            margin: 0 auto;
+            width: 1080px;
+            height: 3076px;
+        }
+        .title-wrap {
+            display: block;
+            float: left;
+            width: 100%;
+            height: 100px;
+            position: relative;
+            min-height: 1px;
+            float: left;
+        }
+        .sub-title-wrap {
+            height: 5%;
+        }
+        .medicine-content-box {
+            display: block;
+            float: left;
+            width: 342px;
+            height: 144px;
+            margin: 0px 3px 6px 9px;
+            border-radius: 4px;
+            border: solid 1px #acacac;
+            background-color: #ffffff;
+        }
+    }
+     
+    }
+</style>
+
 </head>
 
 
@@ -49,8 +119,8 @@
             <div class="mobile-title">
                 <img class="img-logo1"  src="/resources/images/common/web_logo.png">
                 <div class="title-logo-text-area"  >
-                    <div style="height:58%%; font-size: 30px;font-weight: bold;">9월 천식 보고서</div>
-                    <div style="height:30%; font-size: 12px;"> 대한민국 1등 천식관리어플 숨케어</div>
+                    <div class="report_month_title">9월 천식 보고서</div>
+                    <div class="sub_report_title"> 대한민국 1등 천식관리어플 숨케어</div>
                 </div>
             </div>
             <div class="card">
@@ -103,7 +173,7 @@
                     <div class="medi-card-t2" style="">일반복용 : 2 번</div>
                     <div class="medi-card-t3" style="">응급복용 : 1 번</div>
                     <div class="medi-card-persent" style="">10.00%</div>
-                    <canvas class="doughnut" id="doughnutChart0" width="72" height="72" style=""></canvas>
+                <span class="doughnut-postion">  <canvas class="doughnut" id="doughnutChart0"  width="72" height="72"></canvas></span>
                 </div>
 
                 <div class="medi-card1" style="">
@@ -113,7 +183,7 @@
                     <div class="medi-card-t2" style="">일반복용 : 0 번</div>
                     <div class="medi-card-t3" style="">응급복용 : 2 번</div>
                     <div class="medi-card-persent" style="">필요시</div>
-                    <canvas class="doughnut" id="doughnutChart1" width="72" height="72" style="position:absolute;left:249px;top:62px;display:none;"></canvas>
+                    <span class="doughnut-postion">   <canvas class="doughnut" id="doughnutChart1"  width="72" height="72"></canvas></span>
                 </div>
 
                 <div class="medi-card2" style="">
@@ -123,7 +193,7 @@
                     <div class="medi-card-t2" style="">일반복용 : 2 번</div>
                     <div class="medi-card-t3" style="">응급복용 : 0 번</div>
                     <div class="medi-card-persent" style="">필요시</div>
-                    <canvas class="doughnut" id="doughnutChart2" width="72" height="72" style="position:absolute;left:249px;top:62px;display:none;"></canvas>
+                    <span class="doughnut-postion"><canvas class="doughnut" id="doughnutChart2"  width="72" height="72"  ></canvas></span>
                 </div>
 
                 <div class="medi-card3" style="">
@@ -133,7 +203,7 @@
                     <div class="medi-card-t2" style="">일반복용 : 2 번</div>
                     <div class="medi-card-t3" style="">응급복용 : 0 번</div>
                     <div class="medi-card-persent" style="">필요시</div>
-                    <canvas class="doughnut" id="doughnutChart2" width="72" height="72" style="position:absolute;left:249px;top:62px;display:none;"></canvas>
+                  <span class="doughnut-postion">   <canvas class="doughnut" id="doughnutChart3" width="72" height="72" ></canvas></span>
                 </div>
 
                 <div class="medi-card4" style="">
@@ -143,7 +213,7 @@
                     <div class="medi-card-t2" style="">일반복용 : 2 번</div>
                     <div class="medi-card-t3" style="">응급복용 : 0 번</div>
                     <div class="medi-card-persent" style="">필요시</div>
-                    <canvas class="doughnut" id="doughnutChart4" width="72" height="72" style="position:absolute;left:249px;top:62px;display:none;"></canvas>
+                   <span class="doughnut-postion">   <canvas class="doughnut" id="doughnutChart4" width="72" height="72" ></canvas></span>
                 </div>
 
                 <div class="medi-card5" style="">
@@ -152,12 +222,13 @@
                     <div class="medi-card-t1" style="">목표횟수 : (필요시 복용)</div>
                     <div class="medi-card-t2" style="">일반복용 : 2 번</div>
                     <div class="medi-card-t3" style="">응급복용 : 0 번</div>
-                    <div class="medi-card-persent2" style="">0.00%</div>
-                    <canvas class="doughnut" id="doughnutChart5" width="72" height="72" style="position:absolute;left:249px;top:62px;display:none;"></canvas>c
+                    <div class="medi-card-persent" style="">0.00%</div>
+                <span class="doughnut-postion">     <canvas class="doughnut" id="doughnutChart5" width="72" height="72" ></canvas></span>
                 </div>
             </div>
 
-{% comment %} <span>6월6일 css style 분리</span> {% endcomment %}
+                <!-- page 2  -->
+
             <div class="card">
                 <div class="pef-point" style=""></div>
                 <div class="pef-title" style="">최대호기유속(PEF)</div>
@@ -363,22 +434,22 @@
                     <div class="pef-summary-sub2" style="">한달 간 최소 수치</div>
                     <div class="pef-summary-val2" style="">110 (L/m)</div>
                 </div>
-                <div class="pef-summary3" style="position:absolute;left:718px;top:1718px;width: 332px;height: 60px;border-radius: 4px;background-color: #dff5e0;">
-                    <div class="pef-summary-sub3" style="width: 40%;position:absolute;left:12px;top:20px;font-size:14px;">일 평균 변동률</div>
-                    <div class="pef-summary-val3" style="width: 30%;position:absolute;right:16px;top:18px;font-size:20px;text-align: right;font-weight: bold;">0.00%</div>
+                <div class="pef-summary3" style="">
+                    <div class="pef-summary-sub3" style="">일 평균 변동률</div>
+                    <div class="pef-summary-val3" style="">0.00%</div>
                 </div>
-                <div class="pef-legend-title1" style="position:absolute;left:862px;top:1678px;color: #33d16b;font-size:14px;margin-left:5px;">흡입기 미사용</div>
-                <div class="pef-legend-rect1" style="display:none;position:absolute;left:877px;top:1667px;width:20px;height:20px;border-radius: 2px;background-color: #33d16b;"></div>
-                <div class="pef-legend-title2" style="position:absolute;left:982px;top:1678px;color: #f57020;font-size:14px;margin-left:5px; ">흡입기 사용</div>
-                <div class="pef-legend-rect2" style="display:none;position:absolute;left:995px;top:1667px;width:20px;height: 20px;border-radius:2px;background-color: #f57020;"></div>
-                <div class="pef-chart-mobile" style="width:100%;margin-left:0%;display:none;">
+                <div class="pef-legend-title1" style="">흡입기 미사용</div>
+                <div class="pef-legend-rect1" style=""></div>
+                <div class="pef-legend-title2" style="">흡입기 사용</div>
+                <div class="pef-legend-rect2" style=""></div>
+                <div class="pef-chart-mobile" style="">
 
-                    <div style="margin-left:10px;width:3098px;height:273px;white-space: nowrap;position:relative;margin-top:10px;">
+                    <div class="plus1" style="">
 
 
-                        <div style="width:198px; background-image:url('/resources/images/common/report_pef_chart_left.png');background-repeat:no-repeat;" class="pef-chart-mobile-inner">
-                            <div style="position:absolute;left:19px;top:8px;width:50px;text-align:center">날짜</div>
-                            <div style="position:absolute;left:11px;top:40px;width:75px;text-align:center">최소/최대</div>
+                        <div   style="" class="pef-chart-mobile-inner">
+                            <div class="date" style="">날짜</div>
+                            <div class="number" style="">최소/최대</div>
 
                             <div style="position:absolute;left:10px;top:72.0px;font-size:14px;width:50px;text-align:right;">700</div>
 
@@ -412,7 +483,7 @@
                         <div style="z-index:99;position:absolute;left:2958px;top:221.5px;;color:#ffffff; width: 32px;text-align:center;font-size: 12px;font-weight: 500;">110</div>
 
 
-                        <div style="z-index:90;position:relative;background-image:url('/resources/images/common/report_pef_chart_right.png');background-repeat:no-repeat;" class="pef-chart-mobile-inner">
+                        <div style="" class="pef-chart-mobile-inner2">
                             <div style="z-index:90;position:absolute;left:23px;top:8px;width:50px;text-align:center">9/2</div>
                             <div style="z-index:90;position:absolute;left:5px;top:40px;width:40px;text-align:center">최소</div>
                             <div style="z-index:90;position:absolute;left:55px;top:40px;width:40px;text-align:center">최대</div>
@@ -431,7 +502,7 @@
                         <div style="z-index:99;position:absolute;left:1458px;top:82.5px;;color:#ffffff; width: 32px;text-align:center;font-size: 12px;font-weight: 500;">666</div>
 
 
-                        <div style="z-index:90;position:relative;background-image:url('/resources/images/common/report_pef_chart_right.png');background-repeat:no-repeat;" class="pef-chart-mobile-inner">
+                        <div style="" class="pef-chart-mobile-inner3">
                             <div style="z-index:90;position:absolute;left:23px;top:8px;width:50px;text-align:center">9/3</div>
                             <div style="z-index:90;position:absolute;left:5px;top:40px;width:40px;text-align:center">최소</div>
                             <div style="z-index:90;position:absolute;left:55px;top:40px;width:40px;text-align:center">최대</div>

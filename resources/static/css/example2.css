@@ -23,104 +23,18 @@ body {
     /* this affects the margin in the printer settings */
 }
 
-@media screen and (max-width: 768px) {
-    body {
-        color: #343434;
-        background: #2a3f54;
-        font-family: "Helvetica Neue", Roboto, Arial, "Droid Sans", sans-serif;
-        font-size: 13px;
-        font-weight: 400;
-        line-height: 1.471;
-        background-color: #d0d0d0;
-        print-color-adjust: exact;
-        -webkit-print-color-adjust: exact;
-        overflow: auto;
-    }
-    .background-wrap {
-        background-color: #ffffff;
-        margin: 0 auto;
-        width: 1080px;
-        height: 3076px;
-    }
-    .title-wrap {
-        display: block;
-        float: left;
-        width: 100%;
-        height: 100px;
-        position: relative;
-        min-height: 1px;
-        float: left;
-    }
-    .sub-title-wrap {
-        height: 5%;
-    }
-    .medicine-content-box {
-        display: block;
-        float: left;
-        width: 342px;
-        height: 144px;
-        margin: 0px 3px 6px 9px;
-        border-radius: 4px;
-        border: solid 1px #acacac;
-        background-color: #ffffff;
-    }
-    .img-logo1 {
-        display: none;
-        position: absolute;
-        left: 20px;
-        top: 20px;
-        height: 45px;
-        width: 45px;
-    }
-    .title-logo-text-area {
-        position: absolute;
-        left: 85px;
-        top: 40px;
-        width: 30%;
-        display: block;
-        float: left;
-        height: 80px;
-    }
-    .month-title {
-        height: 58%;
-        font-size: 30px;
-        font-weight: bold;
-    }
-    .month-subtitle {
-        height: 30%;
-        font-size: 12px;
-    }
-    html,
-    body {
-        max-width: 100%;
-        overflow-x: hidden;
-        margin: 0px;
-        padding: 0px;
-    }
-    .background-wrap {
-        background-color: white;
-        display: block;
-        width: 100% !important;
-    }
+user agent stylesheet div {
+    display: block;
+}
+
+@media screen and (max-width: 790px) {
     .page-1 {
         background-color: #d9d9d9 !important;
         height: auto !important;
         width: 100% !important;
-        display: block;
-        float: left;
-        width: 1080px;
-        height: 2980px;
-        position: relative;
-        min-height: 1px;
     }
     .page-back-1 {
         display: none !important;
-        position: absolute;
-        left: 0px;
-        top: 0px;
-        height: 1480px;
-        width: 1080px;
-        margin-bottom: 20px;
     }
     .img-logo1 {
         display: inline-block !important;
@@ -128,42 +42,11 @@ body {
         margin-left: 4% !important;
         height: auto !important;
     }
-    .mobile-title.img-logo1 {
-        display: none;
-        position: absolute;
-        left: 20px;
-        top: 20px;
-        height: 45px;
-        width: 45px;
-    }
     .title-logo-text-area {
         display: inline-block !important;
         position: unset !important;
         width: 247px !important;
-        float: none !important;
-    }
-    .mobile-title.title-logo-text-area {
-        position: absolute;
-        left: 85px;
-        top: 40px;
-        width: 30%;
-        display: block;
-        float: left;
-        height: 80px;
-    }
-    .mobile-title.month-title {
-        height: 58%;
-        font-size: 30px;
-        font-weight: bold;
-    }
-    .month-title {
-        height: 58%;
-        font-size: 30px;
-        font-weight: bold;
-    }
-    .month-subtitle {
-        height: 30%;
-        font-size: 12px;
+        float: unset !important;
     }
     .title-info-user-info-title1 {
         display: block !important;
@@ -171,743 +54,1176 @@ body {
         margin-left: 4% !important;
         font-size: 24px !important;
     }
-    /* .card.title-info-user-title1 {
+    .title-info-user-u1 {
+        margin-left: 4% !important;
+        width: 100% !important;
+        top: 135px !important;
+        position: unset !important;
+        line-height: 30px;
+    }
+    .title-info-user-i1 {
+        margin-left: 4% !important;
+        width: 100% !important;
+        top: 160px !important;
+        position: unset !important;
+        line-height: 30px;
+    }
+    .title-info-user-h1 {
+        margin-left: 4% !important;
+        width: 100% !important;
+        top: 185px !important;
+        position: unset !important;
+        line-height: 30px;
+    }
+    .title-info-user-d1 {
+        margin-left: 4% !important;
+        width: 100% !important;
+        top: 210px !important;
+        position: unset !important;
+        line-height: 30px;
+    }
+    .title-info-user-info-line1 {
+        display: none !important;
+        width: 100% !important;
+        height: 20px !important;
+        position: unset !important;
+    }
+    .title-point {
+        display: none !important;
+    }
+    .title-info {
+        margin-left: 4% !important;
+        position: unset !important;
+        font-size: 16px !important;
+        font-weight: bold;
+        float: left !important;
+        margin-top: 20px;
+        font-size: 24px !important;
+    }
+    .title-medicine-comment {
+        margin-top: 0px !important;
+        margin-left: 4% !important;
+        position: unset !important;
+        font-size: 14px !important;
+        width: 90%;
+        display: inline-block;
+    }
+    .title-medi-legend1 {
+        margin-top: 20px;
+        position: unset !important;
+        float: right !important;
+        margin-right: 4%;
+    }
+    .title-medi-legend-rect1 {
+        margin-top: 20px;
+        position: unset !important;
+        float: right !important;
+        display: block !important;
+        width: 18px !important;
+        height: 18px !important;
+    }
+    .title-medi-legend2 {
+        margin-top: 20px;
+        position: unset !important;
+        float: right !important;
+        margin-right: 10px;
+    }
+    .title-medi-legend-rect2 {
+        display: block !important;
+        margin-top: 20px;
+        position: unset !important;
+        float: right !important;
+        width: 18px !important;
+        height: 18px !important;
+    }
+    .overall-medi1 {
+        margin-left: 4% !important;
+        margin-top: 10px;
+        width: 92% !important;
+        position: unset !important;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+    }
+    .overall-medi2 {
+        margin-left: 4% !important;
+        margin-top: 10px;
+        width: 92% !important;
+        position: unset !important;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+    }
+    .overall-medi3 {
+        margin-left: 4% !important;
+        margin-top: 10px;
+        width: 92% !important;
+        position: unset !important;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+    }
+    .overall-medi-title1 {
+        position: relative !important;
+        display: inline-block;
+    }
+    .overall-medi-title2 {
+        position: relative !important;
+        display: inline-block;
+    }
+    .overall-medi-title3 {
+        position: relative !important;
+        display: inline-block;
+    }
+    .overall-medi-val3 {
+        position: relative !important;
+        display: inline-block;
+        text-align: right;
+        width: 56% !important;
+    }
+    .overall-medi-val2 {
+        position: relative !important;
+        display: inline-block;
+        text-align: right;
+        width: 56% !important;
+    }
+    .overall-medi-val1 {
+        position: relative !important;
+        display: inline-block;
+        text-align: right;
+        width: 46% !important;
+    }
+    .mediList1 {
+        display: none !important;
+    }
+    .mediList2 {
+        display: none !important;
+    }
+    .mediList3 {
+        display: none !important;
+    }
+    .mediList4 {
+        display: none !important;
+    }
+    .mediList5 {
+        display: none !important;
+    }
+    .mediList6 {
+        display: none !important;
+    }
+    .mediList7 {
+        display: none !important;
+    }
+    .mediList8 {
+        display: none !important;
+    }
+    .mediList9 {
+        display: none !important;
+    }
+    .mediList10 {
+        display: none !important;
+    }
+    .mediList11 {
+        display: none !important;
+    }
+    .mediList12 {
+        display: none !important;
+    }
+    .medi-card0 {
+        margin-left: 4%;
+        margin-top: 10px;
+        width: 92% !important;
+        position: unset !important;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+        border: none !important;
+    }
+    .medi-card1 {
+        margin-left: 4%;
+        margin-top: 10px;
+        width: 92% !important;
+        position: unset !important;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+        border: none !important;
+    }
+    .medi-card2 {
+        margin-left: 4%;
+        margin-top: 10px;
+        width: 92% !important;
+        position: unset !important;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+        border: none !important;
+    }
+    .medi-card3 {
+        margin-left: 4%;
+        margin-top: 10px;
+        width: 92% !important;
+        position: unset !important;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+        border: none !important;
+    }
+    .medi-card4 {
+        margin-left: 4%;
+        margin-top: 10px;
+        width: 92% !important;
+        position: unset !important;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+        border: none !important;
+    }
+    .medi-card5 {
+        margin-left: 4%;
+        margin-top: 10px;
+        width: 92% !important;
+        position: unset !important;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+        border: none !important;
+    }
+    .medi-card6 {
+        margin-left: 4%;
+        margin-top: 10px;
+        width: 92% !important;
+        position: unset !important;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+        border: none !important;
+    }
+    .medi-card7 {
+        margin-left: 4%;
+        margin-top: 10px;
+        width: 92% !important;
+        position: unset !important;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+        border: none !important;
+    }
+    .medi-card8 {
+        margin-left: 4%;
+        margin-top: 10px;
+        width: 92% !important;
+        position: unset !important;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+        border: none !important;
+    }
+    .medi-card9 {
+        margin-left: 4%;
+        margin-top: 10px;
+        width: 92% !important;
+        position: unset !important;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+        border: none !important;
+    }
+    .medi-card10 {
+        margin-left: 4%;
+        margin-top: 10px;
+        width: 92% !important;
+        position: unset !important;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+        border: none !important;
+    }
+    .medi-card11 {
+        margin-left: 4%;
+        margin-top: 10px;
+        width: 92% !important;
+        position: unset !important;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+        border: none !important;
+    }
+    .medi-card-line {
+        position: relative !important;
+        left: 2% !important;
+        width: 96% !important;
+        top: 10px !important;
+    }
+    .medi-card-name {
+        position: relative !important;
+        top: 5px !important;
+    }
+    .medi-card-persent {
+        position: relative !important;
+        left: 78% !important;
+        top: -31% !important;
+    }
+    .medi-card-t1 {
+        margin-left: 4%;
+        margin-top: 20px;
+        width: 70% !important;
+        position: unset !important;
+    }
+    .medi-card-t2 {
+        margin-left: 4%;
+        margin-top: 10px;
+        width: 70% !important;
+        position: unset !important;
+    }
+    .medi-card-t3 {
+        margin-left: 4%;
+        margin-top: 10px;
+        width: 70% !important;
+        position: unset !important;
+    }
+    .card-cause1 {
+        margin-left: 4% !important;
+        margin-top: 10px;
+        width: 92% !important;
+        position: unset !important;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+    }
+    .card-cause2 {
+        margin-left: 4% !important;
+        margin-top: 10px;
+        width: 92% !important;
+        position: unset !important;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+    }
+    .card-cause3 {
+        margin-left: 4% !important;
+        margin-top: 10px;
+        width: 92% !important;
+        position: unset !important;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+    }
+    .card-cause-title {
+        position: relative !important;
+        display: inline-block;
+    }
+    .card-cause-val {
+        position: relative !important;
+        display: inline-block;
+        text-align: right;
+        width: 58% !important;
+    }
+    .title-info-cause {
+        margin-left: 4% !important;
+        position: unset !important;
+        font-size: 24px !important;
+        font-weight: bold;
+        width: 90%;
+        margin-top: 20px;
+    }
+    .doughnut {
+        padding: initial;
+        margin: initial;
+        aspect-ratio: auto 508 / 508;
+        position: relative !important;
+        left: 74.5% !important;
+        top: -63% !important;
+        font-size: 24px !important;
+        animation: chartjs-render-animation 1ms;
+        display: block;
+        height: 72px;
+        width: 72px;
+    }
+    .history-chart-mobile-bar {
+        display: block !important;
+    }
+    .history-chart-mobile-bar-div {
+        display: block !important;
+    }
+    .history-chart-mobile {
+        display: block !important;
+    }
+    .history-chart {
+        display: none !important;
+    }
+    .cause-legend-rect {
+        position: unset !important;
+        margin-left: 8%;
+        display: inline-block !important;
+    }
+    .cause-legend-title {
+        position: unset !important;
+        width: 20%;
+        font-size: 16px !important;
+        margin-bottom: 6px;
+    }
+    .cause-legend-val {
+        position: unset !important;
+        width: 15%;
+        text-align: right;
+    }
+    .pef-legend-rect {
+        display: block !important;
+    }
+    .img-logo2 {
+        display: none !important;
+    }
+    .title-logo-text-area2 {
+        display: none !important;
+    }
+    .title-info-user-info-title2 {
+        display: none !important;
+    }
+    .title-info-user-u2 {
+        display: none !important;
+    }
+    .title-info-user-i2 {
+        display: none !important;
+    }
+    .title-info-user-h2 {
+        display: none !important;
+    }
+    .title-info-user-d2 {
+        display: none !important;
+    }
+    .page2-title {
+        display: none !important;
+    }
+    .page2-title-sub {
+        display: none !important;
+    }
+    .cause-title {
+        position: unset !important;
+        margin-left: 4%;
+        margin-top: 20px;
+        font-size: 24px !important;
+        font-weight: bold;
+    }
+    .cause-point {
+        display: none !important;
+    }
+    .cause-history-chart-unit {
+        display: none !important;
+    }
+    .pef-point {
+        display: none !important;
+    }
+    .pef-title {
+        margin-left: 4% !important;
+        position: unset !important;
+        font-size: 24px !important;
+        font-weight: bold;
+        float: left !important;
+        margin-top: 20px;
+    }
+    .pef-title-sub {
+        margin-left: 4% !important;
+        position: unset !important;
+        font-size: 14px !important;
+        width: 90%;
+        display: inline-block;
+    }
+    .pef-legend-title1 {
+        margin-top: 20px;
+        position: unset !important;
+        float: right !important;
+        margin-right: 4%;
+    }
+    .pef-legend-rect1 {
+        display: block !important;
+        margin-top: 20px;
+        position: unset !important;
+        float: right !important;
+        width: 18px !important;
+        height: 18px !important;
+    }
+    .pef-legend-title2 {
+        margin-top: 20px;
+        position: unset !important;
+        float: right !important;
+        margin-right: 10px;
+    }
+    .pef-legend-rect2 {
+        display: block !important;
+        margin-top: 20px;
+        position: unset !important;
+        float: right !important;
+        width: 18px !important;
+        height: 18px !important;
+    }
+    .pef-summary {
+        margin-left: 4% !important;
+        margin-top: 10px;
+        width: 92% !important;
+        position: unset !important;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+    }
+    .pef-summary-sub {
+        position: relative !important;
+        display: inline-block;
+    }
+    .pef-summary-val {
+        position: relative !important;
+        display: inline-block;
+        text-align: right;
+        width: 56% !important;
+    }
+    .pef-chart-mobile {
+        display: block !important;
+        overflow-x: scroll;
+        height: 273px;
+        margin-top: 20px;
+        overflow-y: hidden;
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
+    }
+    .pef-chart-mobile::-webkit-scrollbar {
         display: none;
+        /* Chrome, Safari, Opera*/
+    }
+    .pef-chart-mobile-inner {
+        display: inline-block;
+        height: 100%;
+        width: 100px;
+        background-size: contain;
+        float: left;
+    }
+    .pef-pc {
+        display: none !important;
+    }
+    .mobile-title {
+        background-color: white;
+        width: 100%;
+    }
+    .page-1 {
+        color: #343434;
+        font-family: "Helvetica Neue", Roboto, Arial, "Droid Sans", sans-serif;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 1.471;
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+        display: block;
+        width: 1080px;
+        height: 2980px;
+        position: relative;
+        min-height: 1px;
+        float: left;
+    }
+    .page-back-1 {
+        color: #343434;
+        font-family: "Helvetica Neue", Roboto, Arial, "Droid Sans", sans-serif;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 1.471;
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
         position: absolute;
+        left: 0px;
+        top: 0px;
+        height: 1480px;
+        width: 1080px;
+        margin-bottom: 20px;
+    }
+    .mobile-title {
+        color: #343434;
+        font-family: "Helvetica Neue", Roboto, Arial, "Droid Sans", sans-serif;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 1.471;
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+    }
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin-bottom: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: white;
+        display: block;
+    }
+    .title-logo-text-area {
+        left: 85px;
+        top: 40px;
+        display: block;
+        height: 80px;
+    }
+    .report_month_title {
+        display: block;
+        height: 58%;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .sub_report_title {
+        height: 30%;
+        font-size: 12px;
+    }
+    .title-info-user-info-title1 {
         left: 20px;
         top: 83px;
         height: 40px;
         width: 100%;
         background-color: white;
-        font-size: 16px;
-        font-weight: bold; */
-}
-
-.title-info-user-title1 {
-    display: none;
-    position: absolute;
-    left: 20px;
-    top: 83px;
-    height: 40px;
-    width: 100%;
-    background-color: white;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.title-info-user-u1 {
-    margin-left: 4% !important;
-    width: 100% !important;
-    top: 135px !important;
-    position: unset !important;
-    line-height: 30px;
-}
-
-
-/* .card.title-info-user-u1 {
-        position: absolute;
-        margin-left: 424px;
-        top: 45px;
+        font-weight: bold;
+    }
+    .title-info-user-u1 {
         color: #707070;
         font-size: 16px;
-        width: 300px;
-    } */
-
-.title-info-user-u1 {
-    position: absolute;
-    margin-left: 424px;
-    top: 45px;
-    color: #707070;
-    font-size: 16px;
-    width: 300px;
-}
-
-.title-info-user-i1 {
-    margin-left: 4% !important;
-    width: 100% !important;
-    top: 160px !important;
-    position: unset !important;
-    line-height: 30px;
-}
-
-
-/* .card.title-info-user-i1 {
-        position: absolute;
-        margin-left: 424px;
-        top: 75px;
+    }
+    .title-info-user-i1 {
         color: #707070;
         font-size: 16px;
-        width: 300px;
-    } */
-
-.title-info-user-i1 {
-    position: absolute;
-    margin-left: 424px;
-    top: 75px;
-    color: #707070;
-    font-size: 16px;
-    width: 300px;
-}
-
-.title-info-user-h1 {
-    margin-left: 4% !important;
-    width: 100% !important;
-    top: 185px !important;
-    position: unset !important;
-    line-height: 30px;
-}
-
-
-/* .card.title-info-user-h1 {
-        position: absolute;
-        margin-left: 732px;
-        top: 45px;
+    }
+    .title-info-user-h1 {
         color: #707070;
         font-size: 16px;
-        width: 340px;
         overflow: hidden;
-    } */
-
-.title-info-user-h1 {
-    position: absolute;
-    margin-left: 732px;
-    top: 45px;
-    color: #707070;
-    font-size: 16px;
-    width: 340px;
-    overflow: hidden;
-}
-
-.title-info-user-d1 {
-    margin-left: 4% !important;
-    width: 100% !important;
-    top: 210px !important;
-    position: unset !important;
-    line-height: 30px;
-}
-
-
-/* .card.title-info-user-d1 {
-        position: absolute;
-        margin-left: 732px;
-        top: 75px;
+    }
+    .title-info-user-d1 {
         color: #707070;
         font-size: 16px;
-        width: 340px;
         overflow: hidden;
-    } */
-
-.title-info-user-d1 {
-    position: absolute;
-    margin-left: 732px;
-    top: 75px;
-    color: #707070;
-    font-size: 16px;
-    width: 340px;
-    overflow: hidden;
-}
-
-.title-info-user-info-line1 {
-    display: none;
-    position: absolute;
-    left: 10px;
-    top: 100px;
-    height: 1px;
-    width: 1060px;
-    background-color: #d5d5d5;
-    margin-top: 20px;
-}
-
-.title-point {
-    display: none;
-    position: absolute;
-    left: 30px;
-    top: 147px;
-    width: 12px;
-    height: 12px;
-    border-radius: 6px;
-    background-color: #4e4e4e;
-}
-
-.title-info {
-    margin-left: 4% !important;
-    position: unset !important;
-    font-size: 16px !important;
-    font-weight: bold;
-    float: left !important;
-    margin-top: 20px;
-    font-size: 24px !important;
-}
-
-
-/* .card.title-info {
+    }
+    .title-info-user-info-line1 {
+        left: 10px;
+        top: 100px;
+        background-color: #d5d5d5;
+        margin-top: 20px;
+    }
+    .title-point {
+        position: absolute;
+        left: 30px;
+        top: 147px;
+        width: 12px;
+        height: 12px;
+        border-radius: 6px;
+        background-color: #4e4e4e;
+    }
+    .title-info {
         position: absolute;
         left: 52px;
         top: 137px;
         font-size: 23px;
         color: #3e3e3e;
         font-weight: bold;
-    } */
-
-.title-info {
-    position: absolute;
-    left: 52px;
-    top: 137px;
-    font-size: 23px;
-    color: #3e3e3e;
-    font-weight: bold;
-}
-
-.title-medicine-comment {
-    margin-top: 0px !important;
-    margin-left: 4% !important;
-    position: unset !important;
-    font-size: 14px !important;
-    width: 90%;
-    display: inline-block;
-}
-
-.title-medi-legend1 {
-    margin-top: 20px;
-    position: unset !important;
-    float: right !important;
-    margin-right: 4%;
-}
-
-.title-medi-legend-rect1 {
-    display: block !important;
-    margin-top: 20px;
-    position: unset !important;
-    float: right !important;
-    width: 18px !important;
-    height: 18px !important;
-}
-
-.title-medi-legend2 {
-    margin-top: 20px;
-    position: unset !important;
-    float: right !important;
-    margin-right: 10px;
-}
-
-.title-medi-legend-rect2 {
-    display: block !important;
-    margin-top: 20px;
-    position: unset !important;
-    float: right !important;
-    width: 18px !important;
-    height: 18px !important;
-}
-
-.overall-medi1 {
-    margin-left: 4% !important;
-    margin-top: 10px;
-    width: 92% !important;
-    position: unset !important;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
-}
-
-.overall-medi2 {
-    margin-left: 4% !important;
-    margin-top: 10px;
-    width: 92% !important;
-    position: unset !important;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
-}
-
-.overall-medi3 {
-    margin-left: 4% !important;
-    margin-top: 10px;
-    width: 92% !important;
-    position: unset !important;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
-}
-
-.overall-medi-title1 {
-    position: relative !important;
-    display: inline-block;
-}
-
-.overall-medi-title2 {
-    position: relative !important;
-    display: inline-block;
-}
-
-.overall-medi-title3 {
-    position: relative !important;
-    display: inline-block;
-}
-
-.overall-medi-val3 {
-    position: relative !important;
-    display: inline-block;
-    text-align: right;
-    width: 56% !important;
-}
-
-.overall-medi-val2 {
-    position: relative !important;
-    display: inline-block;
-    text-align: right;
-    width: 56% !important;
-}
-
-.overall-medi-val1 {
-    position: relative !important;
-    display: inline-block;
-    text-align: right;
-    width: 46% !important;
-}
-
-.mediList1 {
-    display: none !important;
-}
-
-.mediList2 {
-    display: none !important;
-}
-
-.mediList3 {
-    display: none !important;
-}
-
-.mediList4 {
-    display: none !important;
-}
-
-.mediList5 {
-    display: none !important;
-}
-
-.mediList6 {
-    display: none !important;
-}
-
-.mediList7 {
-    display: none !important;
-}
-
-.mediList8 {
-    display: none !important;
-}
-
-.mediList9 {
-    display: none !important;
-}
-
-.mediList10 {
-    display: none !important;
-}
-
-.mediList11 {
-    display: none !important;
-}
-
-.mediList12 {
-    display: none !important;
-}
-
-.medi-card0 {
-    margin-left: 4%;
-    margin-top: 10px;
-    width: 92% !important;
-    position: unset !important;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
-    border: none !important;
-}
-
-.medi-card1 {
-    margin-left: 4%;
-    margin-top: 10px;
-    width: 92% !important;
-    position: unset !important;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
-    border: none !important;
-}
-
-.medi-card2 {
-    margin-left: 4%;
-    margin-top: 10px;
-    width: 92% !important;
-    position: unset !important;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
-    border: none !important;
-}
-
-.medi-card3 {
-    margin-left: 4%;
-    margin-top: 10px;
-    width: 92% !important;
-    position: unset !important;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
-    border: none !important;
-}
-
-.medi-card4 {
-    margin-left: 4%;
-    margin-top: 10px;
-    width: 92% !important;
-    position: unset !important;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
-    border: none !important;
-}
-
-.medi-card5 {
-    margin-left: 4%;
-    margin-top: 10px;
-    width: 92% !important;
-    position: unset !important;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
-    border: none !important;
-}
-
-.medi-card6 {
-    margin-left: 4%;
-    margin-top: 10px;
-    width: 92% !important;
-    position: unset !important;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
-    border: none !important;
-}
-
-.medi-card7 {
-    margin-left: 4%;
-    margin-top: 10px;
-    width: 92% !important;
-    position: unset !important;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
-    border: none !important;
-}
-
-.medi-card8 {
-    margin-left: 4%;
-    margin-top: 10px;
-    width: 92% !important;
-    position: unset !important;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
-    border: none !important;
-}
-
-.medi-card9 {
-    margin-left: 4%;
-    margin-top: 10px;
-    width: 92% !important;
-    position: unset !important;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
-    border: none !important;
-}
-
-.medi-card10 {
-    margin-left: 4%;
-    margin-top: 10px;
-    width: 92% !important;
-    position: unset !important;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
-    border: none !important;
-}
-
-.medi-card11 {
-    margin-left: 4%;
-    margin-top: 10px;
-    width: 92% !important;
-    position: unset !important;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
-    border: none !important;
-}
-
-.medi-card-line {
-    position: relative !important;
-    left: 2% !important;
-    width: 96% !important;
-    top: 10px !important;
-}
-
-.medi-card-name {
-    position: relative !important;
-    top: 5px !important;
-}
-
-.medi-card-persent {
-    position: relative !important;
-    left: 78% !important;
-    top: -31% !important;
-}
-
-.medi-card-t1 {
-    margin-left: 4%;
-    margin-top: 20px;
-    width: 70% !important;
-    position: unset !important;
-}
-
-.medi-card-t2 {
-    margin-left: 4%;
-    margin-top: 10px;
-    width: 70% !important;
-    position: unset !important;
-}
-
-.medi-card-t3 {
-    margin-left: 4%;
-    margin-top: 10px;
-    width: 70% !important;
-    position: unset !important;
-}
-
-.card-cause1 {
-    margin-left: 4% !important;
-    margin-top: 10px;
-    width: 92% !important;
-    position: unset !important;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
-}
-
-.card-cause2 {
-    margin-left: 4% !important;
-    margin-top: 10px;
-    width: 92% !important;
-    position: unset !important;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
-}
-
-.card-cause3 {
-    margin-left: 4% !important;
-    margin-top: 10px;
-    width: 92% !important;
-    position: unset !important;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
-}
-
-.card-cause-title {
-    position: relative !important;
-    display: inline-block;
-}
-
-.card-cause-val {
-    position: relative !important;
-    display: inline-block;
-    text-align: right;
-    width: 58% !important;
-}
-
-.title-info-cause {
-    margin-left: 4% !important;
-    position: unset !important;
-    font-size: 24px !important;
-    font-weight: bold;
-    width: 90%;
-    margin-top: 20px;
-}
-
-.doughnut {
-    position: relative !important;
-    left: 74.5% !important;
-    top: -63% !important;
-    font-size: 24px !important;
-}
-
-.history-chart-mobile-bar {
-    display: block !important;
-}
-
-.history-chart-mobile-bar-div {
-    display: block !important;
-}
-
-.history-chart-mobile {
-    display: block !important;
-}
-
-.history-chart {
-    display: none !important;
-}
-
-.cause-legend-rect {
-    position: unset !important;
-    margin-left: 8%;
-    display: inline-block !important;
-}
-
-.cause-legend-title {
-    position: unset !important;
-    width: 20%;
-    font-size: 16px !important;
-    margin-bottom: 6px;
-}
-
-.cause-legend-val {
-    position: unset !important;
-    width: 15%;
-    text-align: right;
-}
-
-.pef-legend-rect {
-    display: block !important;
-}
-
-.img-logo2 {
-    display: none !important;
-}
-
-.title-logo-text-area2 {
-    display: none !important;
-}
-
-.title-info-user-info-title2 {
-    display: none !important;
-}
-
-.title-info-user-u2 {
-    display: none !important;
-}
-
-.title-info-user-i2 {
-    display: none !important;
-}
-
-.title-info-user-h2 {
-    display: none !important;
-}
-
-.title-info-user-d2 {
-    display: none !important;
-}
-
-.page2-title {
-    display: none !important;
-}
-
-.page2-title-sub {
-    display: none !important;
-}
-
-.cause-title {
-    position: unset !important;
-    margin-left: 4%;
-    margin-top: 20px;
-    font-size: 24px !important;
-    font-weight: bold;
-}
-
-.cause-point {
-    display: none !important;
-}
-
-.cause-history-chart-unit {
-    display: none !important;
-}
-
-.pef-point {
-    display: none !important;
-}
-
-.pef-title {
-    margin-left: 4% !important;
-    position: unset !important;
-    font-size: 24px !important;
-    font-weight: bold;
-    float: left !important;
-    margin-top: 20px;
-}
-
-.pef-title-sub {
-    margin-left: 4% !important;
-    position: unset !important;
-    font-size: 14px !important;
-    width: 90%;
-    display: inline-block;
-}
-
-.pef-legend-title1 {
-    margin-top: 20px;
-    position: unset !important;
-    float: right !important;
-    margin-right: 4%;
-}
-
-.pef-legend-rect1 {
-    display: block !important;
-    margin-top: 20px;
-    position: unset !important;
-    float: right !important;
-    width: 18px !important;
-    height: 18px !important;
-}
-
-.pef-legend-title2 {
-    margin-top: 20px;
-    position: unset !important;
-    float: right !important;
-    margin-right: 10px;
-}
-
-.pef-legend-rect2 {
-    display: block !important;
-    margin-top: 20px;
-    position: unset !important;
-    float: right !important;
-    width: 18px !important;
-    height: 18px !important;
-}
-
-.pef-summary {
-    margin-left: 4% !important;
-    margin-top: 10px;
-    width: 92% !important;
-    position: unset !important;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
-}
-
-.pef-summary-sub {
-    position: relative !important;
-    display: inline-block;
-}
-
-.pef-summary-val {
-    position: relative !important;
-    display: inline-block;
-    text-align: right;
-    width: 56% !important;
-}
-
-.pef-chart-mobile {
-    display: block !important;
-    overflow-x: scroll;
-    height: 273px;
-    margin-top: 20px;
-    overflow-y: hidden;
-    -ms-overflow-style: none;
-    /* IE and Edge */
-    scrollbar-width: none;
-    /* Firefox */
-}
-
-.pef-chart-mobile::-webkit-scrollbar {
-    display: none;
-    /* Chrome, Safari, Opera*/
-}
-
-.pef-chart-mobile-inner {
-    display: inline-block;
-    height: 100%;
-    width: 100px;
-    background-size: contain;
-    float: none;
-}
-
-.pef-pc {
-    display: none !important;
-}
-
-.mobile-title {
-    background-color: white;
-    width: 100%;
-}
-
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    margin-bottom: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: white;
+    }
+    .title-medicine-comment {
+        top: 140px;
+        color: #707070;
+    }
+    .title-medi-legend1 {
+        left: 920px;
+        top: 140px;
+        color: #33d16b;
+        font-size: 14px;
+        margin-left: 5px;
+    }
+    .title-medi-legend-rect1 {
+        left: 870px;
+        top: 125x;
+        display: block;
+        border-radius: 2px;
+        background-color: #33d16b;
+    }
+    .title-medi-legend2 {
+        left: 994px;
+        top: 140px;
+        color: #fd9393;
+        font-size: 14px;
+        margin-left: 5px;
+    }
+    .title-medi-legend-rect2 {
+        left: 960px;
+        top: 125px;
+        width: 20px;
+        height: 20px;
+        border-radius: 2px;
+        background-color: #fd9393;
+    }
+    .overall-medi1 {
+        left: 30px;
+        top: 180px;
+        height: 60px;
+        border-radius: 4px;
+        background-color: #dff5e0;
+    }
+    .overall-medi2 {
+        left: 374px;
+        top: 180px;
+        height: 60px;
+        border-radius: 4px;
+        background-color: #dff5e0;
+    }
+    .overall-medi3 {
+        left: 718px;
+        top: 180px;
+        height: 60px;
+        border-radius: 4px;
+        background-color: #dff5e0;
+    }
+    .overall-medi-title1 {
+        width: 40%;
+        position: absolute;
+        left: 12px;
+        top: 20px;
+        font-size: 14px;
+    }
+    .overall-medi-title2 {
+        width: 40%;
+        position: absolute;
+        left: 12px;
+        top: 20px;
+        font-size: 14px;
+    }
+    .overall-medi-title3 {
+        width: 50%;
+        position: absolute;
+        left: 12px;
+        top: 18px;
+        font-size: 14px;
+    }
+    .overall-medi-val3 {
+        width: 30%;
+        position: absolute;
+        right: 18px;
+        top: 18px;
+        font-size: 20px;
+        text-align: right;
+        font-weight: bold;
+    }
+    .overall-medi-val2 {
+        width: 30%;
+        position: absolute;
+        right: 18px;
+        top: 18px;
+        font-size: 20px;
+        text-align: right;
+        font-weight: bold;
+    }
+    .overall-medi-val1 {
+        width: 30%;
+        position: absolute;
+        right: 18px;
+        top: 18px;
+        font-size: 20px;
+        text-align: right;
+        font-weight: bold;
+    }
+    .mediList1 {
+        position: absolute;
+        left: 30px;
+        top: 252px;
+        width: 332px;
+        height: 144px;
+        border-radius: 4px;
+    }
+    .mediList2 {
+        position: absolute;
+        left: 374px;
+        top: 252px;
+        width: 332px;
+        height: 144px;
+        border-radius: 4px;
+    }
+    .mediList3 {
+        position: absolute;
+        left: 718px;
+        top: 252px;
+        width: 332px;
+        height: 144px;
+        border-radius: 4px;
+    }
+    .mediList4 {
+        position: absolute;
+        left: 30px;
+        top: 408px;
+        width: 332px;
+        height: 144px;
+        border-radius: 4px;
+    }
+    .mediList5 {
+        position: absolute;
+        left: 374px;
+        top: 408px;
+        width: 332px;
+        height: 144px;
+        border-radius: 4px;
+    }
+    .mediList6 {
+        position: absolute;
+        left: 718px;
+        top: 408px;
+        width: 332px;
+        height: 144px;
+        border-radius: 4px;
+    }
+    .mediList7 {
+        position: absolute;
+        left: 30px;
+        top: 564px;
+        width: 332px;
+        height: 144px;
+        border-radius: 4px;
+    }
+    .mediList8 {
+        position: absolute;
+        left: 374px;
+        top: 564px;
+        width: 332px;
+        height: 144px;
+        border-radius: 4px;
+    }
+    .mediList9 {
+        position: absolute;
+        left: 718px;
+        top: 564px;
+        width: 332px;
+        height: 144px;
+        border-radius: 4px;
+    }
+    .mediList10 {
+        position: absolute;
+        left: 30px;
+        top: 720px;
+        width: 332px;
+        height: 144px;
+        border-radius: 4px;
+    }
+    .mediList11 {
+        position: absolute;
+        left: 374px;
+        top: 720px;
+        width: 332px;
+        height: 144px;
+        border-radius: 4px;
+    }
+    .mediList12 {
+        position: absolute;
+        left: 718px;
+        top: 720px;
+        width: 332px;
+        height: 144px;
+        border-radius: 4px;
+    }
+    .medi-card0 {
+        color: #343434;
+        line-height: 1.471;
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+        left: 30px;
+        top: 250px;
+        height: 144px;
+        background-color: #ffffff;
+    }
+    .medi-card-t1 {
+        font-family: "Helvetica Neue", Roboto, Arial, "Droid Sans", sans-serif;
+        font-weight: 400;
+        line-height: 1.471;
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+        position: absolute;
+        left: 12px;
+        top: 62px;
+        width: 232px;
+        font-size: 16px;
+        text-align: left;
+        color: #707070;
+    }
+    .medi-card-t2 {
+        font-family: "Helvetica Neue", Roboto, Arial, "Droid Sans", sans-serif;
+        font-weight: 400;
+        line-height: 1.471;
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+        position: absolute;
+        left: 12px;
+        top: 86px;
+        width: 160px;
+        font-size: 16px;
+        text-align: left;
+        color: #707070;
+    }
+    .medi-card-t3 {
+        font-family: "Helvetica Neue", Roboto, Arial, "Droid Sans", sans-serif;
+        font-weight: 400;
+        line-height: 1.471;
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+        position: absolute;
+        left: 12px;
+        top: 110px;
+        width: 160px;
+        font-size: 16px;
+        text-align: left;
+        color: #707070;
+    }
+    .medi-card1 {
+        left: 374px;
+        top: 250px;
+        height: 144px;
+        border-radius: 4px;
+        background-color: #ffffff;
+    }
+    .doughnut-postion {
+        position: absolute;
+        left: 249px;
+        top: 62px;
+        display: block;
+        border: solid 5px #33d16b;
+    }
+    .medi-card-persent {
+        font-family: "Helvetica Neue", Roboto, Arial, "Droid Sans", sans-serif;
+        font-weight: 400;
+        line-height: 1.471;
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+        position: absolute;
+        left: 263px;
+        top: 89px;
+        width: 43px;
+        font-size: 14px;
+        text-align: center;
+        color: #707070;
+    }
+    .medi-card2 {
+        position: absolute;
+        left: 718px;
+        top: 250px;
+        width: 332px;
+        height: 144px;
+        border-radius: 4px;
+        border: solid 1px #acacac;
+        background-color: #ffffff;
+    }
+    .medi-card3 {
+        position: absolute;
+        left: 30px;
+        top: 406px;
+        width: 332px;
+        height: 144px;
+        border-radius: 4px;
+        border: solid 1px #acacac;
+        background-color: #ffffff;
+    }
+    .medi-card4 {
+        position: absolute;
+        left: 374px;
+        top: 406px;
+        width: 332px;
+        height: 144px;
+        border-radius: 4px;
+        border: solid 1px #acacac;
+        background-color: #ffffff;
+    }
+    .medi-card5 {
+        position: absolute;
+        left: 718px;
+        top: 406px;
+        width: 332px;
+        height: 144px;
+        border-radius: 4px;
+        border: solid 1px #acacac;
+        background-color: #ffffff;
+    }
+    .medi-card-parent2 {
+        position: absolute;
+        left: 263px;
+        top: 89px;
+        width: 43px;
+        font-size: 14px;
+        text-align: center;
+        color: #707070;
+    }
+    .medi-card-line {
+        color: #343434;
+        font-family: "Helvetica Neue", Roboto, Arial, "Droid Sans", sans-serif;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 1.471;
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+        position: absolute;
+        left: 12px;
+        top: 51px;
+        width: 320px;
+        height: 1px;
+        background-color: #d5d5d5;
+    }
+    .medi-card-name {
+        font-family: "Helvetica Neue", Roboto, Arial, "Droid Sans", sans-serif;
+        line-height: 1.471;
+        position: absolute;
+        left: 12px;
+        top: 14px;
+        width: 320px;
+        font-size: 18px;
+        text-align: left;
+        color: #343434;
+        font-weight: bold;
+    }
+    .pef-point {
+        position: absolute;
+        left: 30px;
+        top: 1683px;
+        width: 12px;
+        height: 12px;
+        border-radius: 6px;
+        background-color: #4e4e4e;
+    }
+    .pef-title {
+        position: absolute;
+        left: 52px;
+        top: 1661px;
+        font-size: 23px;
+        color: #3e3e3e;
+        font-weight: bold;
+    }
+    .pef-title-sub {
+        position: absolute;
+        left: 52px;
+        top: 1694px;
+        font-size: 14px;
+        color: #707070;
+    }
+    .pef-summary {
+        position: absolute;
+        left: 30px;
+        top: 1718px;
+        width: 332px;
+        height: 60px;
+        border-radius: 4px;
+        background-color: #dff5e0;
+    }
+    .pef-summary-sub {
+        width: 40%;
+        position: absolute;
+        left: 12px;
+        top: 20px;
+        font-size: 14px;
+    }
+    .pef-summary-val {
+        width: 30%;
+        position: absolute;
+        right: 18px;
+        top: 18px;
+        font-size: 20px;
+        text-align: right;
+        font-weight: bold;
+    }
+    .pef-summary2 {
+        position: absolute;
+        left: 374px;
+        top: 1718px;
+        width: 332px;
+        height: 60px;
+        border-radius: 4px;
+        background-color: #dff5e0;
+    }
+    .pef-summary-sub2 {
+        width: 40%;
+        position: absolute;
+        left: 12px;
+        top: 20px;
+        font-size: 14px;
+    }
+    .pef-summary-val2 {
+        width: 30%;
+        position: absolute;
+        right: 16px;
+        top: 18px;
+        font-size: 20px;
+        text-align: right;
+        font-weight: bold;
+    }
+    .pef-summary3 {
+        position: absolute;
+        left: 718px;
+        top: 1718px;
+        width: 332px;
+        height: 60px;
+        border-radius: 4px;
+        background-color: #dff5e0;
+    }
+    .pef-summary-sub3 {
+        width: 40%;
+        position: absolute;
+        left: 12px;
+        top: 20px;
+        font-size: 14px;
+    }
+    .pef-summary-val3 {
+        width: 30%;
+        position: absolute;
+        right: 16px;
+        top: 18px;
+        font-size: 20px;
+        text-align: right;
+        font-weight: bold;
+    }
+    .pef-legend-title1 {
+        position: absolute;
+        left: 862px;
+        top: 1678px;
+        color: #33d16b;
+        font-size: 14px;
+        margin-left: 5px;
+    }
+    .pef-legend-rect1 {
+        display: none;
+        position: absolute;
+        left: 877px;
+        top: 1667px;
+        width: 20px;
+        height: 20px;
+        border-radius: 2px;
+        background-color: #33d16b;
+    }
+    .pef-legend-title2 {
+        position: absolute;
+        left: 982px;
+        top: 1678px;
+        color: #f57020;
+        font-size: 14px;
+        margin-left: 5px;
+    }
+    .pef-legend-rect2 {
+        display: none;
+        position: absolute;
+        left: 995px;
+        top: 1667px;
+        width: 20px;
+        height: 20px;
+        border-radius: 2px;
+        background-color: #f57020;
+    }
+    .pef-chart-mobile {
+        width: 100%;
+        margin-left: 0%;
+        display: none;
+    }
+    .plus1 {
+        margin-left: 10px;
+        width: 3098px;
+        height: 273px;
+        white-space: nowrap;
+        position: relative;
+        margin-top: 10px;
+    }
+    .chartjs-size-monitor {
+        padding: initial;
+        margin: initial;
+        position: absolute;
+        direction: ltr;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+        pointer-events: none;
+        visibility: hidden;
+        z-index: -1;
+    }
+    .pef-chart-mobile-inner {
+        width: 198px;
+        background-image: url("/resources/images/common/report_pef_chart_left.png");
+        background-repeat: no-repeat;
+    }
+    .date {
+        position: absolute;
+        left: 19px;
+        top: 8px;
+        width: 50px;
+        text-align: center;
+    }
+    .number {
+        position: absolute;
+        left: 11px;
+        top: 40px;
+        width: 75px;
+        text-align: center;
+    }
+    .pef-chart-mobile-inner2 {
+        z-index: 90;
+        position: relative;
+        background-image: url("/resources/images/common/report_pef_chart_right.png");
+        background-repeat: no-repeat;
+    }
+    .pef-chart-mobile-inner3 {
+        z-index: 90;
+        position: relative;
+        background-image: url("/resources/images/common/report_pef_chart_right.png");
+        background-repeat: no-repeat;
+    }
 }
